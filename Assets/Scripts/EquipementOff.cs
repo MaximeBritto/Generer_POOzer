@@ -2,17 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace generateur.Class Diagram
+
+public class EquipementOff : Equipement
 {
-	public class Vilain : Character
-	{
-		String nom;
-		int newField;
-		Crime cri;
+		StatArmeOff stat;
+		String Nom;
 
 		public override void ToString()
 		{
 			throw new NotImplementedException();
 		}
-	}
 }
+

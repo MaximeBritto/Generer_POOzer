@@ -1,17 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using UnityEngine;
 
-namespace generateur.Class Diagram
+
+public class Hero : Character
 {
-	public class Hero : Character
-	{
-		String Nom;
-		Reussite reu;
+		public String Nom;
+		public Reussite reu;
 
 		public override void ToString()
 		{
 			throw new NotImplementedException();
 		}
-	}
 }
+

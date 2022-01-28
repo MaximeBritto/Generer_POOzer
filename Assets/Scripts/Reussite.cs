@@ -1,11 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using UnityEngine;
 
-namespace generateur.Class Diagram
+public struct Reussite
 {
-	public struct Reussite
-	{
 		String reu;
-	}
 }
+

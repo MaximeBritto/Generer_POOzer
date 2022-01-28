@@ -1,17 +1,18 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using UnityEngine;
 
-namespace generateur.Class Diagram
+public class Vilain : Character
 {
-	public class EquipementDef : Equipement
-	{
-		StatEquipementDef stat;
-		String Nom;
+		public String nom;
+		public Crime cri;
+		public Sprite _mSprite;
+
 
 		public override void ToString()
 		{
 			throw new NotImplementedException();
 		}
-	}
 }
+
