@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using UnityEngine;
 
 
-public class Equipement
+public class Equipement : Invocable
 {
-		StatEquipement Stat;
-
-		public virtual void ToString()
+	public Sprite _mSprite;
+	public virtual String ToString()
 		{
-			throw new NotImplementedException();
+			return "Je suis un equipement";
 		}
 }
 

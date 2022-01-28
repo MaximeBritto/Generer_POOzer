@@ -2,14 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 
-public class Character: MonoBehaviour
 
-	{
+public class Character : Invocable
+
+{
 		protected String _name;
 		protected Stat myStat;
-		private  String[] _listeNom = new string[] { "Jean-Eude", "Jean-Michel", "Jean Nemar", "Ge pludidé","Os Cours","Ale Led" };
+		public Sprite _mSprite;
+
+		private String[] _listeNom = new string[] { "Jean-Eude", "Jean-Michel", "Jean Nemar", "Geplu didé","Os Cours","Ale Led" };
 	
 
 
@@ -22,9 +26,9 @@ public class Character: MonoBehaviour
 		this.myStat = new Stat(1,2,3);
     }
 
-		public virtual void ToString()
+		public virtual String ToString()
 		{
-		Debug.Log("Je suis :" + this._name + " mes stats sont pour l'attaque :  " + this.myStat.Power + " pour la defense :" + this.myStat.Armor + " et de niveau :" + this.myStat.niveau);
+		return "Je suis :" + this._name + " mes stats sont pour l'attaque :  " + this.myStat.Power + " pour la defense :" + this.myStat.Armor + " et de niveau :" + this.myStat.niveau;
 		}
 }
 

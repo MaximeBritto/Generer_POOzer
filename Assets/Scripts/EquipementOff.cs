@@ -5,12 +5,16 @@ using System.Text;
 
 public class EquipementOff : Equipement
 {
-		StatArmeOff stat;
+		StatEquipementOff stat;
 		String Nom;
-
-		public override void ToString()
+		public EquipementOff(string nom)
 		{
-			throw new NotImplementedException();
+			this.stat =  new  StatEquipementOff(5,5);
+			this.Nom = nom;
 		}
+		public override String ToString()
+			{
+				return "C'est un " + this.Nom + " Stat : armor : " + stat.Degat + " durabilité : " + stat.Durabilité;
+			}
 }
 
