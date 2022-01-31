@@ -7,27 +7,30 @@ public class ButtonHero : MonoBehaviour
 {
     public Sprite[] _mSprite;
     public Image[] images;
-    public int nbImage = 0;
+    public static int nbImage = 0;
     public Invocable[] Inventaire ;
     public Text[] text;
+    public Character[] Perso;
+
+
+    public void Start()
+    {
+        Perso[0] = new Hero("Saitama", _mSprite[4]);
+        Perso[1] = new Vilain("Zemour", _mSprite[0]);
+        Perso[2] = new Hero("Tatsumaki", _mSprite[5]);
+        Perso[3] = new Vilain("Garou", _mSprite[1]);
+        Perso[4] = new Hero("Genos", _mSprite[3]);
+        Perso[5] = new Vilain("Lord Boros", _mSprite[2]);
+    }
     public void generatehero()
     {
         Ptitreset();
         System.Random rnd = new System.Random();
-        int aupif = rnd.Next(0, 11);
+        int aupif = rnd.Next(0, 6);
         Character temp;
-        if (aupif < 5) { 
-        
-            temp = new Hero();
-            
-        }
-        else
-        {
-            temp = new Vilain();
-        }
+        temp = Perso[aupif];
         System.Random rnd2 = new System.Random();
         int aupif2 = rnd.Next(0, 6);
-        temp._mSprite = _mSprite[aupif2];
         Inventaire[nbImage] = temp;
         images[nbImage].sprite = temp._mSprite;
         images[nbImage].enabled = true;
@@ -70,6 +73,7 @@ public class ButtonHero : MonoBehaviour
 
     public void Ptitreset()
     {
+        
         if (nbImage > 5)
         {
             for (int i = 0; i <= 5; i++)

@@ -8,9 +8,11 @@ public class Vilain : Character
 		
 		public Crime cri;
 
-		public Vilain()
+		public Vilain(String nom, Sprite spr)
 		{
+			this._name = nom;
 			this.cri = new Crime();
+			this._mSprite = spr;
 
 		}
 		public override String ToString()

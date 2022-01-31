@@ -14,7 +14,7 @@ public class EquipementOff : Equipement
 		}
 		public override String ToString()
 			{
-				return "C'est un " + this.Nom + " Stat : armor : " + stat.Degat + " durabilité : " + stat.Durabilité;
+				return "C'est un " + this.Nom + " Stat : Degat : " + stat.Degat + " durabilité : " + stat.Durabilité;
 			}
 }
 

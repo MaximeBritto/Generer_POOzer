@@ -13,16 +13,11 @@ public class Character : Invocable
 		protected Stat myStat;
 		public Sprite _mSprite;
 
-		private String[] _listeNom = new string[] { "Jean-Eude", "Jean-Michel", "Jean Nemar", "Geplu didé","Os Cours","Ale Led" };
 	
 
 
 	public Character()
     {
-        System.Random rnd = new System.Random();
-		int aupif = rnd.Next(0, 6);
-
-		this._name = _listeNom[aupif];
 		this.myStat = new Stat(1,2,3);
     }
 

@@ -545,7 +545,6 @@ MonoBehaviour:
   - {fileID: 758948879}
   - {fileID: 1154085406}
   - {fileID: 2075451831}
-  nbImage: 0
   Inventaire:
   - {fileID: 0}
   - {fileID: 0}
@@ -560,6 +559,13 @@ MonoBehaviour:
   - {fileID: 849875649}
   - {fileID: 58392895}
   - {fileID: 278790542}
+  Perso:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &563032314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,7 +1277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.6365967, y: 9.7422}
+  m_AnchoredPosition: {x: 4.6365967, y: 9.7421875}
   m_SizeDelta: {x: -4.8351, y: -248.4849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &896272598
@@ -2098,7 +2104,6 @@ MonoBehaviour:
   - {fileID: 758948879}
   - {fileID: 1154085406}
   - {fileID: 2075451831}
-  nbImage: 0
   Inventaire:
   - {fileID: 0}
   - {fileID: 0}
@@ -2113,6 +2118,7 @@ MonoBehaviour:
   - {fileID: 849875649}
   - {fileID: 58392895}
   - {fileID: 278790542}
+  Perso: []
 --- !u!1 &2075451829
 GameObject:
   m_ObjectHideFlags: 0
